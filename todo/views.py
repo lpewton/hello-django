@@ -11,7 +11,7 @@ def get_todo_list(request):
     return render(request, "todo/todo_list.html", context)
 
 
-def add_item(request):
+def toadd_item(request):
     if request.method == "POST":
         form = ItemForm(request.POST)
         if form.is_valid():
